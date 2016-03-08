@@ -1,0 +1,33 @@
+
+html, body
+{
+    height: 100%;
+    width:100%;
+    margin:0;
+    padding:0;
+	font-family:Lucida Sans Unicode;
+	color: #003366;
+}
+
+div {
+	font-size:small;
+	color: #003366;
+}
+
+a {
+color: #33cccc;
+text-decoration: none;
+}
+
+a:hover {
+color: #ffcc06;
+}
+
+a:active {
+color: #99ffcc;
+}
+
+hr {
+	background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+}
