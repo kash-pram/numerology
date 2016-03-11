@@ -10,6 +10,16 @@ html, body
     cursor:default;
 }
 
+.hundred {
+    width:100%;
+}
+
+#tblmeanings {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+
 div {
 	font-size:small;
 	color: #003366;
