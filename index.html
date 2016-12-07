@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="author" content="pragaas" />
+	<meta name="author" content="pragaas">
 
-	<title>Prakash PM | @pragaas | Front-End Web Developer</title>
+	<title>Prakash PM | Front-End Web Developer | @pragaas</title>
     
     <!-- Disabled BOOTSTRAP CDN for development -->
 	<!-- BOOTSTRAP CDN 
@@ -17,25 +17,230 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	 BOOTSTRAP CDN -->
 
-	 <!-- Bootstrap -->
-    <!-- Under Development
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
-    Under Development -->
+
 	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" medai="(min-width: 451px)" href="css/custom.css">
+    <link rel="stylesheet" media="(max-width: 450px)" href="css/mobile.css">
+    
+    <style>
+    .loader{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:url(images/page-loader.gif) 50% 50% no-repeat #f9f9f9};
+    </style>
 </head>
 <body>
-    <div class='fullscreenDiv'>
-        <div class="center"> &lt; Under Development &gt;</div>
+    <div class="loader"></div>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-xs-12">
+                <div class="">
+                    <h1>PRAKASH PM</h1>
+                    <span>@pragaas</span>
+                </div>
+            </div>
+        </div>
+        <!--    assuming header & content classsName are of length 3
+                check breakpoint1        -->
+        
+        <div class="row row-fluid text-center">
+            <div class="col-xs-6 col-md-12 nopadding">
+                    <div class="inactive box green" id="divProg" style="height:100px;">
+                        {P}
+                    </div>
+            </div>
+            <div class="fill" id="divProgFill">
+            </div>
+            <div class="greenContent hide content" id="divProgContent">
+                        <span id="spProj1">
+                            <div class="innerContainer">
+                                <div class="skillTable">
+                                    <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th colspan="2">Beginner</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Node JS</td>
+                                        <td>SCSS</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Express JS</td>
+                                        <td>Angular JS</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Progressive Webapps</td>
+                                        <td>AWS</td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="skillTable">
+                                    <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th colspan="2">Intermediate</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>HTML5</td>
+                                        <td>Javascript</td>
+                                      </tr>
+                                      <tr>
+                                        <td>PHP</td>
+                                        <td>CSS3</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Python</td>
+                                        <td>SQL</td>
+                                      </tr>
+                                        <tr>
+                                        <td>jQuery</td>
+                                        <td>Bootstrap</td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="skillTable">
+                                    <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th colspan="2">Expert</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td colspan="2">Master of none.</td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2">sorry about that; I'm still learning.</td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="pieCapOne">Designer</div>
+                                <div class="pieChart">
+                                    <div class="pieOuterOne">
+                                        <div class="pieInnerOne"></div>
+                                    </div>
+                                    <div class="pieOuterTwo">
+                                        <div class="pieInnerTwo"></div>
+                                    </div>
+                                </div>
+                                <div class="pieCapTwo">Developer</div>
+                            </div>
+                        </span>
+                        <div class="close">close </div>
+                    </div>
+            <div class="col-xs-6 col-md-12 nopadding">
+                <div class="inactive box gray" id="divResume">
+                    Resume
+                </div>
+            </div>
+            <div class="fill" id="divResFill">
+            </div>
+            <div class="grayContent hide content" id="divResumeContent">
+                    <span>
+                        <input type="button" class="btn btn-primary" name="Open" value="Open" id="btnOpenRes" />
+                        <input type="button" class="btn btn-primary" name="Download" value="Download" id="btnDownRes" />
+                    </span>
+                    <div class="close">close </div>
+            </div>
+        </div>
+        <div class="row  row-fluid text-center">
+            <div class="col-xs-12 col-md-12 nopadding">
+                <div class="inactive box red" id="divAboutme">
+                    About Me
+                </div>
+            </div>
+            <div class="fill" id="divAboutFill">
+            </div>
+            <div class="redContent hide content" id="divAboutContent">
+                    <h3>I am an aspiring web developer, passionate about building high quality websites, in terms of design, usability, security, performance, responsiveness, accessibility and search optimized</h3>
+                    When I'm not with a computer, you can see me solving sudoku or playing poker.
+
+                    <h4>more about me ...</h4>
+                    <ul>
+                        <li>I do card tricks (or so called magic).</li>
+                        <li>I learnt to solve Rubiks (at the age of 27).</li>
+                        <li>I learnt to swim (at the age of 26).</li>
+                        <li>I have decent driving skills.</li>
+                        <li>I'm interested in sports (more playing, than watching).</li>
+                        <li>I go for road trips (my only stress buster).</li>
+                        <li>I'm health conscious, very much.</li>
+                        <li>I don't prefer hot drinks; I drink beer occasionally.</li>
+                    </ul>
+
+                    <h3><small>Sometimes I had to show-off, only because people under estimate me.</small></h3>
+                    <div class="close">close </div>
+            </div>
+        </div>
+        <div class="row row-fluid text-center">
+            <div class="col-xs-6 col-md-12 nopadding">
+                <div class="inactive box blue" id="divExp">
+                    Projects
+                </div>
+                <div class="fill" id="divExpFill">
+            </div>
+                <div class="blueContent hide content" id="divExpContent">
+                    <span id="spProj4"><a href="http://www.beppo.in" target="_blank">www.beppo.in</a></span>
+                    <div class="close">close </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-12 nopadding">
+                <div class="containerSide">
+                    <div class="inactive halfbox purple" id="divDiary">
+                        Diary
+                    </div>
+                    <div class="fill" id="divDiaryFill">
+                    </div>
+                    <div class="purpleContent hide content" id="divDiaryContent">
+                        <a href="https://pragaas.wordpress.com/" target="_blank">Open Blog</a>
+                        <div class="close">close </div>
+                    </div>
+                    <div class="inactive halfbox orange" id="divAppreciation">
+                        Appreciation
+                    </div>
+                    <div class="fill" id="divApprFill">
+                    </div>
+                    <div class="orangeContent hide content" id="divApprContent">
+                        <span id="spProj6">Sorry, nothing to show here.
+                        Want to be in my testimonial?
+                            Reach me through, sign up.
+                        </span>
+                        <div class="close">close </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-fluid text-center">
+            <div class="col-xs-12 col-md-12 nopadding">
+                <div class="inactive box rose" id="divSignup">
+                    Sign Up
+                </div>
+                <div class="fill" id="divSignFill">
+                </div>
+                <div class="roseContent hide content" id="divSignContent">
+                    <span id="spProj7">
+
+                    </span>
+                    <div class="close">close </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Under Development
+
+    <!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    -->
     <script src="js/bootstrap.min.js"></script>
-    Under Development -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
