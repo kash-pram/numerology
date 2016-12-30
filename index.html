@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="author" content="pragaas">
-
-	<title>Prakash PM | Front-End Web Developer | @pragaas</title>
+<!-- notice: add more meta information -->
+	<title>Prakash PM | Web Developer | @pragaas</title>
     
-    <!-- Disabled BOOTSTRAP CDN for development -->
+<!-- notice: Disabled BOOTSTRAP CDN for development -->
 	<!-- BOOTSTRAP CDN 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	 BOOTSTRAP CDN -->
 
-	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="style/bootstrap.min.css" rel="stylesheet">
 
 	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	 <!--[if lt IE 9]>
@@ -25,222 +25,244 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" medai="(min-width: 451px)" href="css/custom.css">
-    <link rel="stylesheet" media="(max-width: 450px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width: 481px)" href="style/custom.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="style/mobile.css">
+    <link rel="stylesheet" media="all" href="style/common.css">
     
     <style>
     .loader{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:url(images/page-loader.gif) 50% 50% no-repeat #f9f9f9};
     </style>
+    
+    <!-- styles needed by jScrollPane -->
+    <!--<link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" media="all" />-->
 </head>
-<body>
+<body class="">
     <div class="loader"></div>
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-xs-12">
-                <div class="">
-                    <h1>PRAKASH PM</h1>
-                    <span>@pragaas</span>
-                </div>
-            </div>
-        </div>
-        <!--    assuming header & content classsName are of length 3
-                check breakpoint1        -->
-        
-        <div class="row row-fluid text-center">
-            <div class="col-xs-6 col-md-12 nopadding">
-                    <div class="inactive box green" id="divProg" style="height:100px;">
-                        {P}
-                    </div>
-            </div>
-            <div class="fill" id="divProgFill">
-            </div>
-            <div class="greenContent hide content" id="divProgContent">
-                        <span id="spProj1">
-                            <div class="innerContainer">
-                                <div class="skillTable">
-                                    <table class="table table-bordered">
-                                    <thead>
-                                      <tr>
-                                        <th colspan="2">Beginner</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Node JS</td>
-                                        <td>SCSS</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Express JS</td>
-                                        <td>Angular JS</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Progressive Webapps</td>
-                                        <td>AWS</td>
-                                      </tr>
-                                    </tbody>
-                                    </table>
-                                </div>
-                                <div class="skillTable">
-                                    <table class="table table-bordered">
-                                    <thead>
-                                      <tr>
-                                        <th colspan="2">Intermediate</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>HTML5</td>
-                                        <td>Javascript</td>
-                                      </tr>
-                                      <tr>
-                                        <td>PHP</td>
-                                        <td>CSS3</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Python</td>
-                                        <td>SQL</td>
-                                      </tr>
-                                        <tr>
-                                        <td>jQuery</td>
-                                        <td>Bootstrap</td>
-                                      </tr>
-                                    </tbody>
-                                    </table>
-                                </div>
-                                <div class="skillTable">
-                                    <table class="table table-bordered">
-                                    <thead>
-                                      <tr>
-                                        <th colspan="2">Expert</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td colspan="2">Master of none.</td>
-                                      </tr>
-                                      <tr>
-                                        <td colspan="2">sorry about that; I'm still learning.</td>
-                                      </tr>
-                                    </tbody>
-                                    </table>
-                                </div>
-                                <div class="pieCapOne">Designer</div>
-                                <div class="pieChart">
-                                    <div class="pieOuterOne">
-                                        <div class="pieInnerOne"></div>
-                                    </div>
-                                    <div class="pieOuterTwo">
-                                        <div class="pieInnerTwo"></div>
-                                    </div>
-                                </div>
-                                <div class="pieCapTwo">Developer</div>
-                            </div>
-                        </span>
-                        <div class="close">close </div>
-                    </div>
-            <div class="col-xs-6 col-md-12 nopadding">
-                <div class="inactive box gray" id="divResume">
-                    Resume
-                </div>
-            </div>
-            <div class="fill" id="divResFill">
-            </div>
-            <div class="grayContent hide content" id="divResumeContent">
-                    <span>
-                        <input type="button" class="btn btn-primary" name="Open" value="Open" id="btnOpenRes" />
-                        <input type="button" class="btn btn-primary" name="Download" value="Download" id="btnDownRes" />
-                    </span>
-                    <div class="close">close </div>
-            </div>
-        </div>
-        <div class="row  row-fluid text-center">
-            <div class="col-xs-12 col-md-12 nopadding">
-                <div class="inactive box red" id="divAboutme">
-                    About Me
-                </div>
-            </div>
-            <div class="fill" id="divAboutFill">
-            </div>
-            <div class="redContent hide content" id="divAboutContent">
-                    <h3>I am an aspiring web developer, passionate about building high quality websites, in terms of design, usability, security, performance, responsiveness, accessibility and search optimized</h3>
-                    When I'm not with a computer, you can see me solving sudoku or playing poker.
 
-                    <h4>more about me ...</h4>
-                    <ul>
-                        <li>I do card tricks (or so called magic).</li>
-                        <li>I learnt to solve Rubiks (at the age of 27).</li>
-                        <li>I learnt to swim (at the age of 26).</li>
-                        <li>I have decent driving skills.</li>
-                        <li>I'm interested in sports (more playing, than watching).</li>
-                        <li>I go for road trips (my only stress buster).</li>
-                        <li>I'm health conscious, very much.</li>
-                        <li>I don't prefer hot drinks; I drink beer occasionally.</li>
-                    </ul>
-
-                    <h3><small>Sometimes I had to show-off, only because people under estimate me.</small></h3>
-                    <div class="close">close </div>
+    <!-- overlay -->
+    <!--<div id="mobOverlay" class="overlay">
+    
+    </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="overlay-content">
+			This is mikki
+		</div>
+    </div>-->
+    <div id="conOverlay">
+        <div class="closeDiv text-center">Close X</div>
+        <div id="modal"></div>
+    </div>
+    
+    <span id='toast' class="small"></span>
+    
+    <!-- placeholders -->
+    <div class="container mobile text-center">
+        <div class="row first-row">
+            <div id="divAboutMe" class="col-sm-6 col-xs-6 only-half aboutMe left-half no-padding">
+                <img id="iconAboutMe" class="center-block icons" src="images/file-xl.png"/>
             </div>
-        </div>
-        <div class="row row-fluid text-center">
-            <div class="col-xs-6 col-md-12 nopadding">
-                <div class="inactive box blue" id="divExp">
-                    Projects
-                </div>
-                <div class="fill" id="divExpFill">
-            </div>
-                <div class="blueContent hide content" id="divExpContent">
-                    <span id="spProj4"><a href="http://www.beppo.in" target="_blank">www.beppo.in</a></span>
-                    <div class="close">close </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-12 nopadding">
-                <div class="containerSide">
-                    <div class="inactive halfbox purple" id="divDiary">
-                        Diary
+            <div id="divSkillSet" class="col-sm-6 col-xs-6 only-half no-padding">
+                <div class="divInternal">
+                    <div class="divInternalHalf">
+                        <div class="skillSet skillLeft">
+                            <img class="center-block icons icons-half" src="images/skill-one.png"/>
+                        </div>
+                        <div class="skillSet skillRight">
+                            <img class="center-block icons icons-half" src="images/skill-four.png"/>
+                        </div>
                     </div>
-                    <div class="fill" id="divDiaryFill">
-                    </div>
-                    <div class="purpleContent hide content" id="divDiaryContent">
-                        <a href="https://pragaas.wordpress.com/" target="_blank">Open Blog</a>
-                        <div class="close">close </div>
-                    </div>
-                    <div class="inactive halfbox orange" id="divAppreciation">
-                        Appreciation
-                    </div>
-                    <div class="fill" id="divApprFill">
-                    </div>
-                    <div class="orangeContent hide content" id="divApprContent">
-                        <span id="spProj6">Sorry, nothing to show here.
-                        Want to be in my testimonial?
-                            Reach me through, sign up.
-                        </span>
-                        <div class="close">close </div>
+                    <div class="divInternalHalf">
+                        <div class="skillSet skillLeft">
+                            <img class="center-block icons icons-half" src="images/skill-three.png"/>
+                        </div>
+                        <div class="skillSet skillRight">
+                            <img class="center-block icons icons-half" src="images/skill-two.png"/>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row row-fluid text-center">
-            <div class="col-xs-12 col-md-12 nopadding">
-                <div class="inactive box rose" id="divSignup">
-                    Sign Up
-                </div>
-                <div class="fill" id="divSignFill">
-                </div>
-                <div class="roseContent hide content" id="divSignContent">
-                    <span id="spProj7">
+        <div class="row second-row">
+            <div class="col-sm-6 col-xs-6 first-half no-padding">
 
-                    </span>
-                    <div class="close">close </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 second-half no-padding">
+                <div class="" ><h3>PRAKASH PM</h3></div> <!-- vertical-align:bottom -->
+                <div class="" >@pragaas</div> <!-- vertical-align:top -->
+            </div>
+        </div>
+        <div class="row third-row">
+            <div id="divSocialMe" class="col-sm-6 col-xs-6 only-half socialMe no-padding left-half">
+                <div class="divInternal">
+                    <div class="divInternalHalf">
+                        <div class="socialTop socialTopOne">
+                            <img class="center-block icons" src="images/social-one.png" style="height:39%;width:30%;"/>
+                        </div>
+                        <div class="socialTop socialTopTwo">
+                            <img class="center-block icons" src="images/social-three.png" style="height:33%;width:25%;"/>
+                        </div>
+                    </div>
+                    <div class="divInternalFull">
+                        <div class="socialBottom">
+                            <img class="center-block icons" src="images/social-two.png" style="height:45%;width:19%;"/>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div id="divContactMe" class="col-sm-6 col-xs-6 only-half no-padding">
+                <img class="center-block icons" src="images/contact.png" style="height:46%;width:39%;"/>
+            </div>
+        </div>
+        <div class="row fourth-row">
+            <div id="divOthers" class="col-sm-12 col-xs-12">
+                <img class="center-block icons" src="images/others.png" style="height:30%;width:20%;"/>
             </div>
         </div>
     </div>
-
-    <!--
+    
+    <!-- content -->
+    <section id="secAbout" class="secContent">
+        <article>
+            i'm an aspiring web developer, passionate to learn something new (almost everyday / all the time), and to build products/utilities that fulfills some "demandful" needs.
+        </article>
+        <article>
+            In my other world, I usually spend time with my family <em>(esp. kids)</em> & friends. I like playing card games <i>(mostly poker)</i>, and I like solving sudoku puzzles & the rubiks as well. I keep an eye on my fitness through exercises (with a light music in the background) and I do meditate regularly.
+        </article>
+        <strong>Likes! (Y)</strong>
+        <article>
+            card tricks
+        </article>
+        <article>
+            rubiks
+        </article>
+        <article>
+            swimming
+        </article>
+        <article>
+            health
+        </article>
+        <article>
+            car drives
+        </article>
+        <article>
+            bike rides
+        </article>
+        <article>
+            seldom hot beverages
+        </article>
+        <article>
+            sports (more playing, than watching)
+        </article>
+        <article>
+            beer served chill, would be great!
+        </article>
+    </section>
+    <section id="secSkillSet" class="secContent">
+        <article>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beginner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Node JS</td>
+                    <td>SCSS</td>
+                  </tr>
+                  <tr>
+                    <td>Web stacks</td>
+                    <td>AWS</td>
+                  </tr>
+                </tbody>
+                </table>
+        </article>
+        <article>
+            <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th colspan="2">Intermediate</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Javascript</td>
+                </tr>
+                <tr>
+                    <td>React JS</td>
+                    <td>Angular JS</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>CSS3</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>SQL</td>
+                </tr>
+                <tr>
+                    <td>jQuery</td>
+                    <td>Bootstrap</td>
+                </tr>
+            </tbody>
+            </table>
+        </article>
+        <article>
+            <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th colspan="">Expert</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="">None. I'm still learning.</td>
+              </tr>
+            </tbody>
+            </table>
+        </article>
+    </section>
+    <section id="secContact" class="secContent">
+        <article>
+            <form>
+                <input type="submit"/>
+            </form>
+        </article>
+    </section>
+    <section id="secOthers" class="secContent">
+        <article>
+            Technical specs of this website:<br/>
+            React JS <br/>
+            jQuery<br/>
+            HTML5 - article, section, emphasize, colors, canvas, <br/>
+            CSS3 - media queries <br/>
+            Responsive web design<br/>
+        </article>
+    </section>
+    <section id="secSocial" class="secContent">
+        <article>
+            Social me:
+            fb.com/<br/>
+            linkedin.com/<br/>
+            wordpress.com<br/>
+            github.com/<br/>
+            
+        </article>
+    </section>
+    
+<!-- notice: disabled for development
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery.js"></script>
+    <script src="script/main.js"></script>
+
+    <!-- the mousewheel plugin - optional to provide mousewheel support -->
+    <!--<script type="text/javascript" src="script/jquery.mousewheel.js"></script>-->
+
+    <!-- the jScrollPane script -->
+    <!--<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>-->
 </body>
 </html>

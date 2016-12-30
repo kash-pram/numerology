@@ -1,0 +1,54 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+a, a:active, a:focus,
+button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+    outline: 0;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.inside {
+    display: inline;
+}
+
+.divContent {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+@media screen and (min-width: 481px) and (max-width: 750px) {
+  #imgDP {
+    width: 18%;
+    display: inline;
+    }
+
+}
+
+@media screen and (min-width: 751px) {
+    #imgDP {
+    width: 12%;
+    display: inline;
+    }
+   
+}
