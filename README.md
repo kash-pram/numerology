@@ -1,2 +1,1 @@
-# bepoind.github.io
-trial website
+# numerology
